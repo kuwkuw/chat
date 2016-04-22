@@ -1,0 +1,13 @@
+extends layout
+block content
+    div.container
+        div.login-form
+            h1 Login to Chat
+            form(action="login" method="post")
+                div.form-group
+                    label Email
+                    input(type = "email" name="email").form-control
+                div.form-group
+                    label Password
+                    input(type = "password" name="password").form-control
+                input(type = "submit" value = "Login").btn.btn-default
